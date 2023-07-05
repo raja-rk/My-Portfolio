@@ -1,0 +1,169 @@
+.cont1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont2{
+    width: 100%;
+    max-width: 1024px;
+    color:beige;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.title{
+    margin: 10px;
+    font-size: large;
+}
+/* 
+.slidetrack{
+    max-width: 100%;
+
+}
+.skillbar{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: calc(150px*7);
+    height: 200px;
+    background-color: aquamarine;
+    animation: scroll 30s linear infinite;
+}
+.skillbar::-webkit-scrollbar {
+    display: none;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 25px;
+    text-align: center;
+    background-color: blue;
+}
+.skilllogo img{
+    width: 130px;
+    height: 130px;
+    background-color: beige;
+}
+.skilltitle{
+    font-size: large;
+    font-weight: 400;
+    border-radius: 25px;
+} */
+
+
+
+@media screen and (min-width: 500px) {
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 8))}
+    }
+    
+    
+    .slider {
+        /* background: white; */
+    
+        height: 200px;
+        margin-top: 10px;
+        overflow:hidden;
+        position: relative;
+        width: 100%;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll 33s linear infinite;
+            display: flex;
+            width: calc(250px * 16);
+        }
+        
+        .slide {
+            height: 200px;
+            width: 250px;
+            text-align: center;
+        }
+        .slide img{
+            width: 130px;
+            height: 130px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-150px * 8))}
+    }
+    
+    
+    .slider {
+        /* background: white; */
+    
+        height: 200px;
+        margin-top: 10px;
+        overflow:hidden;
+        position: relative;
+        width: 100%;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll 33s linear infinite;
+            display: flex;
+            width: calc(150px * 16);
+        }
+        
+        .slide {
+            height: 100px;
+            width: 150px;
+            text-align: center;
+        }
+        .slide img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

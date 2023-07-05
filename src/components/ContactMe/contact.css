@@ -1,0 +1,132 @@
+
+
+.red{
+    position: relative;
+    margin-top: 194px;
+    color:aquamarine
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(128% + 1.3px);
+    @media screen and (max-width:700px) {
+        height: 104px;
+    }
+    height: 194px;
+}
+
+.wave .shape-fill {
+    fill: #ffd8d8;
+}
+.heading{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 10;
+    font-size: x-large;
+}
+.heading h1{
+    display: flex;
+    color: black;
+    background-color:#ffd8d8 ;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.maincontact{
+    position: relative;
+    width: 100%;
+    height:max-content;
+    background-color: #ffd8d8;
+    margin-top: -20px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+    }
+    .myLocation{
+        width: 100%;
+        padding: 20px;
+        height: 350px;
+        border-radius: 25px;
+        border: 3px solid palevioletred;
+        margin-top: 20px
+        /* background-color: aqua */
+    };
+    .contactForm{
+        width: 50%;
+        padding: 1%;
+        /* background-color: azure; */
+        
+    }
+}
+.contactForm form{
+    color:black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.contactForm form label{
+    color: black;
+    font-size: large;
+}
+
+.contactForm form input{
+    color:black;
+    margin: 10px;
+    height: 5rem;
+    width: 300px;
+    border: 2px solid #7b1313;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-style: solid;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.contactForm form textarea{
+    color:black;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #7b1313;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.contactForm form input[type="submit"]{
+    background:    palevioletred;
+    width: 16rem;
+    height: 4rem;
+    
+    border-radius: 4px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 26px/1 "Calibri", sans-serif;
+text-align:    center;
+cursor: pointer;
+}
+
+.contactForm form input[type="submit"]:hover{
+    background-color: #6b52f4;
+    transform: scale(0.98);
+}
+
+

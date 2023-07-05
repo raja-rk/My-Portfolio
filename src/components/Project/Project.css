@@ -1,0 +1,103 @@
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1024px;
+    color:beige;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.title1{
+    font-size: large;
+    margin-left: 20px;
+}
+.cardslist{
+    margin: 20px auto;
+  width:100%;
+  max-height: 600px;
+  overflow: auto; 
+  display:grid;
+  grid-template-columns: 32% 32% 32%;
+  @media screen and (max-width:700px){
+    grid-template-columns: 90% ;
+    
+  }
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items:center;
+  justify-content:center;
+  .card{
+    background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    /* align-items:center;
+    justify-content:center; */
+    overflow-y: scroll;
+    height:300px;
+    font-size:20px;
+    font-family:sans-serif;
+  }
+  .card::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  @media screen and (max-width:700px){
+    .card{height: max-content;}
+  }
+  .card1{background-color: #4056A1;}
+  .card2{background-color: #F13C20;}
+  .card3{background-color: #D79922;}
+  .card4{background-color: #AC3B61;}
+}
+
+.cardslist::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+/* .card{
+    width: 40%;
+    line-height: 200%;
+    height: 300px;
+    background-color: rgba(100, 85, 85, 0.6);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    
+} */
+.head1{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.desc1{
+    max-width: 90%;
+    font-size: large;
+}
+.link1{
+    background-color: green;
+    width: 20%;
+}
+.techstack{
+    margin: 5px;
+}
+.techstack3{
+    font-size: large;
+    font-weight: 800;
+}
+.downarrow{
+    margin-top: -100px;
+    font-size: xxx-large;
+}
